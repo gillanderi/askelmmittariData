@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/fonts/material-icons/index.css">
+    <link rel="stylesheet" href="/css/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="/fonts/roboto/index.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+    <body>
+    <div class="mdl-layout">
+    <H1>
+        <%= kuukausiNimi %>
+            <%= vuosi %>
+    </H1>
+    <p>Askeleita yhteensä: <%= askeleetYhteensa %>. Keskimäärin <%= keskiarvoAskeleet %> askelta päivässä
+    </p>
+    <table class="mdl-data-table mdl-js-data-table">
+        <thead>
+            <tr>
+                <th class="mdl-data-table__cell--non-numeric">Pvm</th>
+                <th class="mdl-data-table__cell--non-numeric">Askeleet</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% const data=JSON.parse(tiedostoData); %>
+                <% data.forEach(entry=> { %>
+                    <tr>
+                        <td class="tableData">
+                            <%= `${entry.pp}.${entry.kk}.${entry.vvvv}` %>
+                        </td>
+                        <td class="tableData">
+                            <%= entry.askeleet %>
+                        </td>
+                    </tr>
+                    <% }) %>
+        </tbody>
+
+    </table>
+    <a href="/back">Palaa alkuun</a>
+
+    
+
+
+
+</div>
+</body>
+
+</html>

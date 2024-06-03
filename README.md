@@ -1,0 +1,1 @@
+# Node-, Express-, Multer- ja EJS-tekniikoin sovellus, joka vastaanottaa lähetettyjä tiedostoja ja lukee näiden sisällöistä dataa. Tyylimuotoiluun käytetään Material Design Lite -kirjastoa 

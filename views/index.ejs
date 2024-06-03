@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/fonts/material-icons/index.css">
+    <link rel="stylesheet" href="/css/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="/fonts/roboto/index.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Document</title>
+    
+</head>
+
+
+<body>
+    <div class="mdl-layout">
+        <h1>Lataa Askelmittarin tiedot</h1>
+        <form method="POST" action="/lataa" enctype="multipart/form-data">
+
+            <div class="mdl-textfield">
+                <input class="mdl-textfield__input" type="file" name="tiedosto" id="tiedosto">
+                <label class="mdl-textfield__label" for="tiedosto">Tiedosto</label>
+            </div>
+
+            <button class="mdl-button mdl-button--raised mdl-button--colored" type="submit">Lataa tiedosto</button>
+    
+    </form>
+   </div> 
+</body>
+
+</html>
